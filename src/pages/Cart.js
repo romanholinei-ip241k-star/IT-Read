@@ -150,7 +150,7 @@ const Cart = () => {
   const grandTotal = cartTotal + shipping;
 
   const handleCheckout = useCallback(() => {
-    alert('🎉 Дякуюза за ваше замовлення! (Це демо — реальна оплата не проводиться.)');
+    alert('🎉 Дякую за за ваше замовлення! (Це демо — реальна оплата не проводиться.)');
     clearCart();
     navigate('/');
   }, [clearCart, navigate]);
