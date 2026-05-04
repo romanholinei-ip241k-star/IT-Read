@@ -229,7 +229,7 @@ const AdminBooks = () => {
             placeholder="Пошук за назвою або автором…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            style={{ background: '#161b22', borderColor: '#30363d', color: '#f0f6fc' }}
+            style={{ background: '#f609de', borderColor: '#30363d', color: '#f0f6fc' }}
           />
         </InputGroup>
         <Button
@@ -262,8 +262,8 @@ const AdminBooks = () => {
                 <tr key={book.id}>
                   <td style={{ color: '#484f58', fontSize: '0.8rem' }}>{idx + 1}</td>
                   <td>
-                    <div style={{ color: '#f0f6fc', fontWeight: 500 }}>{book.title}</div>
-                    <div style={{ color: '#8b949e', fontSize: '0.8rem' }}>{book.author}</div>
+                    <div style={{ color: '#0505f6', fontWeight: 600 }}>{book.title}</div>
+                    <div style={{ color: '#080102', fontSize: '0.8rem' }}>{book.author}</div>
                   </td>
                   <td>
                     <Badge bg="secondary" style={{ fontSize: '0.72rem' }}>

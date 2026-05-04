@@ -96,7 +96,7 @@ const AdminUsers = () => {
           placeholder="Пошук за ім'ям або email…"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          style={{ background: '#161b22', borderColor: '#30363d', color: '#f0f6fc' }}
+          style={{ background: '#f609de', borderColor: '#30363d', color: '#f0f6fc' }}
         />
       </InputGroup>
 
@@ -123,11 +123,11 @@ const AdminUsers = () => {
                   <td>
                     <div className="d-flex align-items-center gap-2">
                       <Avatar>{getInitials(user.name)}</Avatar>
-                      <span style={{ color: '#f0f6fc', fontWeight: 500 }}>{user.name}</span>
+                      <span style={{ color: '#080227', fontWeight: 500 }}>{user.name}</span>
                     </div>
                   </td>
-                  <td style={{ color: '#8b949e' }}>{user.email}</td>
-                  <td style={{ color: '#8b949e' }}>{user.joinedAt || '—'}</td>
+                  <td style={{ color: '#080227' }}>{user.email}</td>
+                  <td style={{ color: '#080227' }}>{user.joinedAt || '—'}</td>
                   <td>
                     {user.isAdmin ? (
                       <Badge bg="warning" text="dark" style={{ fontSize: '0.72rem' }}>
